@@ -4,6 +4,7 @@ using EF.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFsolution.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20240531173913_test1")]
+    partial class test1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -275,40 +278,40 @@ namespace EFsolution.Migrations
                         new
                         {
                             IdPrescription = 1,
-                            Date = new DateTime(2024, 6, 7, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9789),
-                            DueDate = new DateTime(2024, 9, 5, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9828),
+                            Date = new DateTime(2024, 5, 31, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1128),
+                            DueDate = new DateTime(2024, 8, 29, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1175),
                             IdDoctor = 1,
                             IdPatient = 2
                         },
                         new
                         {
                             IdPrescription = 2,
-                            Date = new DateTime(2024, 6, 7, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9834),
-                            DueDate = new DateTime(2024, 8, 6, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9836),
+                            Date = new DateTime(2024, 5, 31, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1183),
+                            DueDate = new DateTime(2024, 7, 30, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1184),
                             IdDoctor = 1,
                             IdPatient = 3
                         },
                         new
                         {
                             IdPrescription = 3,
-                            Date = new DateTime(2024, 6, 7, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9838),
-                            DueDate = new DateTime(2024, 10, 5, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9840),
+                            Date = new DateTime(2024, 5, 31, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1187),
+                            DueDate = new DateTime(2024, 9, 28, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1188),
                             IdDoctor = 4,
                             IdPatient = 4
                         },
                         new
                         {
                             IdPrescription = 4,
-                            Date = new DateTime(2024, 6, 7, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9842),
-                            DueDate = new DateTime(2024, 9, 5, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9844),
+                            Date = new DateTime(2024, 5, 31, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1191),
+                            DueDate = new DateTime(2024, 8, 29, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1192),
                             IdDoctor = 4,
                             IdPatient = 2
                         },
                         new
                         {
                             IdPrescription = 5,
-                            Date = new DateTime(2024, 6, 7, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9846),
-                            DueDate = new DateTime(2024, 7, 7, 8, 41, 21, 714, DateTimeKind.Local).AddTicks(9848),
+                            Date = new DateTime(2024, 5, 31, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1195),
+                            DueDate = new DateTime(2024, 6, 30, 19, 39, 12, 864, DateTimeKind.Local).AddTicks(1196),
                             IdDoctor = 3,
                             IdPatient = 2
                         });
